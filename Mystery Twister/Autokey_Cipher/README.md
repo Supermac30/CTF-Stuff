@@ -2,7 +2,8 @@
 The Autokey cipher is a polyalphabetic substitution cipher characterised by not having a repeated keyword.
 
 To encode the plaintext first concatinate the plaintext to the keyword to make the key, then for i 1...lengthOfPlaintext:
-  c[i] = K[i] + p[i] % 26
+
+  **_c[i] = K[i] + p[i] % 26_**
 
 The script Autokey Decoder in this directory Automates this.
 ## Problem Statement
