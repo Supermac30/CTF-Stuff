@@ -19,44 +19,44 @@ Knowing that WORLD is part of the plaintext we can easily find part of the key u
 By subtracting the plaintext at all positions we should be able to find part of the key.
 
 Running the Autokey Cracking script that checks all positions you'll find lots of what seems like garbage and
-'''
+```
 A possible part of the key WBEKE is at position 11
 A possible part of the key THEWO is at position 12
 A possible part of the key ZHQGC is at position 13
-'''
+```
 
 Position 12 looks very promising, especially since it looks like the word WORLD is cut off.
 Rerunning the script with THEWORLD as part of the plaintext yields:
-'''
+```
 A possible plaintext HQWWBEKE is at position 8
 A possible plaintext ETOTHEWO is at position 9
 A possible plaintext HLLZHQGC is at position 10
-'''
+```
 
 ETOTHEWORLD doesn't make much sence, but it contains our plaintext. Our objective here is to keep running the script until we find the plaintext that starts at position 0
-'''
+```
 A possible plaintext TNTHQWWBEKE is at position 5
 A possible plaintext COMETOTHEWO is at position 6
 A possible plaintext DHJHLLZHQGC is at position 7
-'''
+```
 
 then,
-'''
+```
 A possible plaintext UKGTNTHQWWBEKE is at position 2
 A possible plaintext WELCOMETOTHEWO is at position 3
 A possible plaintext QJUDHJHLLZHQGC is at position 4
-'''
+```
 
 add finally,
-'''
+```
 A possible plaintext GHLWELCOMETOTHEWO is at position 0
 A possible plaintext PSNQJUDHJHLLZHQGC is at position 1
 A possible plaintext AUHVSVWEMZIRZTAUN is at position 2
-'''
+```
 
 Nice! It looks like our key is GHL. We can be sure of this with the key finder script using WELCOMETOTHEWORLD as our plaintext. Using CLWYSXGHAXASPVVHRFQFFDRKMVKOVYY as the cipher text and GHL as the key in the decoder script results in:
-'''
+```
 input ciphertext CLWYSXGHAXASPVVHRFQFFDRKMVKOVYY
 input key GHL
 Your decoded String is: WELCOMETOTHEWORLDOFCRYPTOGRAPHY
-'''
+```
