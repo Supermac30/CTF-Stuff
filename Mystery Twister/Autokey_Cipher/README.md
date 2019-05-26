@@ -33,21 +33,21 @@ A possible part of the key ETOTHEWO is at position 9
 A possible part of the key HLLZHQGC is at position 10
 ```
 
-ETOTHEWO doesn't make much sence, but it contains our plaintext so will try it anyway. Our objective here is to keep running the script until we find the plaintext that starts at position 0. So with ETOTHEWORLD as part of the plaintext,
+ETOTHEWO doesn't make much sence, but it contains our plaintext so will try it anyway. Our objective here is to keep running the script until we find the plaintext that starts at position 0. So with ETOTHEWORLD as part of the plaintext:
 ```
 A possible part of the key TNTHQWWBEKE is at position 5
 A possible part of the key COMETOTHEWO is at position 6
 A possible part of the key DHJHLLZHQGC is at position 7
 ```
 
-then COMETOTHEWORLD as part of the plaintext,
+then COMETOTHEWORLD as part of the plaintext:
 ```
 A possible part of the key UKGTNTHQWWBEKE is at position 2
 A possible part of the key WELCOMETOTHEWO is at position 3
 A possible part of the key QJUDHJHLLZHQGC is at position 4
 ```
 
-add finally WELCOMETOTHEWORLD as part of the plaintext,
+add finally WELCOMETOTHEWORLD as part of the plaintext:
 ```
 A possible part of the key GHLWELCOMETOTHEWO is at position 0
 A possible part of the key PSNQJUDHJHLLZHQGC is at position 1
