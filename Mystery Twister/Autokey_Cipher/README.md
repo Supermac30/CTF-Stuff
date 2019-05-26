@@ -5,7 +5,7 @@ To encode the plaintext first concatinate the plaintext to the keyword to make t
 
   **_c[i] = (K[i] + p[i]) % 26_**
 
-I have written the scripts above to help make working with the Autokey cipher easier, this includes autokey Encoder does the process above automatically
+I have written the scripts above to help make working with the Autokey cipher easier, this includes "Autokey Encoder.py" does the process above automatically
 ## Problem Statement
 https://www.mysterytwisterc3.org/images/challenges/mtc3-cli-02-autokey-en.pdf
 
@@ -18,7 +18,7 @@ Knowing that WORLD is part of the plaintext we can easily find part of the key u
 
 By subtracting the plaintext at all positions we should be able to find part of the key.
 
-Running the Autokey Cracking script that checks all positions you'll find lots of what seems like garbage and
+Running the "Autokey Cracking.py" script that checks all positions you'll find lots of what seems like garbage and
 ```
 A possible part of the key WBEKE is at position 11
 A possible part of the key THEWO is at position 12
@@ -54,7 +54,7 @@ A possible plaintext PSNQJUDHJHLLZHQGC is at position 1
 A possible plaintext AUHVSVWEMZIRZTAUN is at position 2
 ```
 
-Nice! It looks like our key is GHL. We can be sure of this with the key finder script using WELCOMETOTHEWORLD as our plaintext. Using CLWYSXGHAXASPVVHRFQFFDRKMVKOVYY as the cipher text and GHL as the key in the decoder script results in:
+Nice! It looks like our key is GHL. We can be sure of this with the "Autokey Key Finder.py" script using WELCOMETOTHEWORLD as our plaintext. Using CLWYSXGHAXASPVVHRFQFFDRKMVKOVYY as the cipher text and GHL as the key in the "Autokey decoder.py" script results in:
 ```
 input ciphertext CLWYSXGHAXASPVVHRFQFFDRKMVKOVYY
 input key GHL
