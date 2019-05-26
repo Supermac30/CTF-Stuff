@@ -5,7 +5,7 @@ To encode the plaintext first concatinate the plaintext to the keyword to make t
 
   **_c[i] = (K[i] + p[i]) % 26_**
 
-I have written the scripts above to help make working with the Autokey cipher easier, Autokey Encoder does the process above automatically
+I have written the scripts above to help make working with the Autokey cipher easier, this includes autokey Encoder does the process above automatically
 ## Problem Statement
 https://www.mysterytwisterc3.org/images/challenges/mtc3-cli-02-autokey-en.pdf
 
