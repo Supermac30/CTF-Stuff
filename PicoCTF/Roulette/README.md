@@ -37,7 +37,7 @@ cash = get_rand();
 
 Aha! We have found the first bug. The seed is the starting cash value. Using the script "notRandom.c" and inputing the starting cash value will give us the value of every spin. We have to remember to take into account the fact a message is chosen randomly in line 172 `puts(win_msgs[rand()%NUM_WIN_MSGS]);` which means every second random value is the spin.
 
-We cannot win only knowing this however, the program stops after 16 wins and given the max start value is 5000 we need at least 19 wins.
+We cannot win only knowing this however, the program stops after 16 wins and given the max start value is 5000 doubling at each turn we need at least 19 wins.
 
 Looking through the code we find the fishy functions:
 ```C
