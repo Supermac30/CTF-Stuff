@@ -7,7 +7,6 @@ ciphertext = input("input ciphertext ")
 key = ""
 for i in range(len(plaintext)):
     key += chr((ord(ciphertext[i]) - ord(plaintext[i]))%26 + ord("A"))
-print(key)
 for i in range(len(key)):
     if key[i:] == plaintext[:len(key)-i]:
         key = key[:i]
