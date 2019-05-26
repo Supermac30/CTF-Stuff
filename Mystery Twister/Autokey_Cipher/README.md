@@ -33,7 +33,7 @@ A possible plaintext ETOTHEWO is at position 9
 A possible plaintext HLLZHQGC is at position 10
 ```
 
-ETOTHEWORLD doesn't make much sence, but it contains our plaintext. Our objective here is to keep running the script until we find the plaintext that starts at position 0
+ETOTHEWORLD doesn't make much sence, but it contains our plaintext so will try it anyway. Our objective here is to keep running the script until we find the plaintext that starts at position 0
 ```
 A possible plaintext TNTHQWWBEKE is at position 5
 A possible plaintext COMETOTHEWO is at position 6
