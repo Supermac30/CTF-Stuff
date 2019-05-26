@@ -5,7 +5,7 @@ To encode the plaintext first concatinate the plaintext to the keyword to make t
 
   **_c[i] = (K[i] + p[i]) % 26_**
 
-I have written the scripts above to help make working with the Autokey cipher easier, this includes "Autokey Encoder.py" which does the process above automatically
+I have written the scripts above to help make working with the Autokey cipher easier, this includes "Autokey Encoder.py" which does the process above automatically.
 ## Problem Statement
 https://www.mysterytwisterc3.org/images/challenges/mtc3-cli-02-autokey-en.pdf
 
@@ -18,7 +18,7 @@ Knowing that WORLD is part of the plaintext we can easily find part of the key u
 
 By subtracting the plaintext at all positions we should be able to find part of the key.
 
-Running the "Autokey Cracking.py" script that checks all positions you'll find lots of what seems like garbage and
+Running the "Autokey Cracking.py" script that checks all positions you'll find lots of garbage and
 ```
 A possible part of the key WBEKE is at position 11
 A possible part of the key THEWO is at position 12
@@ -33,21 +33,21 @@ A possible plaintext ETOTHEWO is at position 9
 A possible plaintext HLLZHQGC is at position 10
 ```
 
-ETOTHEWORLD doesn't make much sence, but it contains our plaintext so will try it anyway. Our objective here is to keep running the script until we find the plaintext that starts at position 0
+ETOTHEWO doesn't make much sence, but it contains our plaintext so will try it anyway. Our objective here is to keep running the script until we find the plaintext that starts at position 0. So with ETOTHEWORLD as part of the plaintext,
 ```
 A possible plaintext TNTHQWWBEKE is at position 5
 A possible plaintext COMETOTHEWO is at position 6
 A possible plaintext DHJHLLZHQGC is at position 7
 ```
 
-then,
+then COMETOTHEWORLD as part of the plaintext,
 ```
 A possible plaintext UKGTNTHQWWBEKE is at position 2
 A possible plaintext WELCOMETOTHEWO is at position 3
 A possible plaintext QJUDHJHLLZHQGC is at position 4
 ```
 
-add finally,
+add finally WELCOMETOTHEWORLD as part of the plaintext,
 ```
 A possible plaintext GHLWELCOMETOTHEWO is at position 0
 A possible plaintext PSNQJUDHJHLLZHQGC is at position 1
