@@ -9,7 +9,8 @@ e: 38356477766401238667543975942627290214766686965564274866017341378085981923969
 ```
 ## RSA description
 [This is a good discription of RSA](https://simple.wikipedia.org/wiki/RSA_algorithm)
-given cipher text c and message m with public key n and e
+
+Given cipher text c and message m with public key n and e
 
 encode - **_c = m^e % n_**
 
