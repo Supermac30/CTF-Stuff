@@ -14,7 +14,7 @@ Essentially, the objective is to decode the ciphered text CLWYSXGHAXASPVVHRFQFFD
 ## Solving The Problem
 Knowing that WORLD is part of the plaintext we can easily find part of the key using:
 
-**_c[i] - p[i] % 26 = K[i]**
+**_c[i] - p[i] % 26 = K[i]_**
 
 By subtracting the plaintext at all positions we should be able to find part of the key.
 
