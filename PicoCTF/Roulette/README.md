@@ -35,7 +35,7 @@ get_rand() is called in line 185
 cash = get_rand();
 ```
 
-Aha! We have found the first bug. The seed is the starting cash value. Using the script "notRandom.c" and inputing the starting cash value will give us the value of every spin. We have to remember to take into account the fact a message is chosen randomly in line 172 `<puts(win_msgs[rand()%NUM_WIN_MSGS]);`> which means every second random value is the spin.
+Aha! We have found the first bug. The seed is the starting cash value. Using the script "notRandom.c" and inputing the starting cash value will give us the value of every spin. We have to remember to take into account the fact a message is chosen randomly in line 172 `puts(win_msgs[rand()%NUM_WIN_MSGS]);` which means every second random value is the spin.
 
 We cannot win only knowing this however, the program stops after 16 wins and given the max start value is 5000 we need at least 19 wins.
 
@@ -66,7 +66,7 @@ long get_long() {
 }
 ```
 instead of a simple fgets() this function uses a wierdly complicated checking system.
-This function is called in line 60 `<long bet = get_long();>` it takes the value we input and sets it to the bet.
+This function is called in line 60 `long bet = get_long();` it takes the value we input and sets it to the bet.
 
 This function reads only digits and stops when the digits stop appearing. It is also impossible to input a number longer than LONG_MAX because of the check which means no integer overflow. 
 
@@ -80,7 +80,7 @@ if(bet <= cash) {
   puts("You can't bet more than you have!");
 }
 ```
-and would be able to increase the money we have on line 195 `<cash -= bet;>` all we have to do is lose, and our cash would stay at its increased value.
+and would be able to increase the money we have on line 195 `cash -= bet;` all we have to do is lose, and our cash would stay at its increased value.
 
 The problem with this however is that we need to have 3 games before or else we are denied the flag. This is where bug 1 comes in handy.
 
