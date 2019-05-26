@@ -12,17 +12,17 @@ e: 38356477766401238667543975942627290214766686965564274866017341378085981923969
 
 Given cipher text c and message m with public key n and e
 
-encode - **_c = m^e % n_**
+encode - **_c = m^e mod n_**
 
 and with private key d
 
-decode - **_m = c^d % n_**
+decode - **_m = c^d mod n_**
 
-The private key can be found with **_de % totient = 1_** knowing that
+The private key can be found with **_de = 1 mod totient_** knowing that
 **_totient = (p-1)(q-1)_ where _pq = n_ and p,q are primes**
 
 ## Solution
-It is very important to note that **_de % totient = 1_**.
+It is very important to note that **_de = 1 % totient_**.
 
 We are given c, n, and e but not d. Upon first glance, other than the fact that factoring n is a possible solution, it should be obvious that e is absolutely massive, especially given the hint. 
 
