@@ -1,6 +1,5 @@
 """
-    This script decodes the ciphertext when knowing
-    part of the plaintext with the AutoKey Cipher
+    This script decodes the ciphertext when knowing part of the plaintext with the AutoKey Cipher
 """
 
 ciphertext = input("input ciphertext ")
