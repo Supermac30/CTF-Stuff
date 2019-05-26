@@ -16,7 +16,7 @@ Knowing that WORLD is part of the plaintext we can easily find part of the key u
 
 **_(c[i] - p[i]) % 26 = K[i]_**
 
-By subtracting the plaintext at all positions we should be able to find part of the key.
+By subtracting the plaintext at all positions we should be able to find part of a key that results in WORLD, we just have to find the key that makes sence.
 
 Running the "Autokey Cracking.py" script that checks all positions you'll find lots of garbage and
 ```
