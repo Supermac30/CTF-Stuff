@@ -70,7 +70,7 @@ This function is called in line 60 `long bet = get_long();` it takes the value w
 
 This function reads only digits and stops when the digits stop appearing. It is also impossible to input a number longer than LONG_MAX because of the check which means no integer overflow. 
 
-At first I thought the bug had something to do with the getchar() function, but then I realised that the check to stop an integer overflow happens after variable l changes. Boom! We have found the second bug. By inputing a number the same length as LONG_MAX but is infact larger we can easily overflow the integer and return a negative number.
+At first I thought the bug had something to do with the getchar() function, but then I realised that the check to stop an integer overflow happens after variable l changes. Boom! We have found the second bug. By inputing a number the same length as LONG_MAX but is in fact larger we can easily overflow the integer and return a negative number.
 
 This is useful because a negative number would pass the check on line 61:
 ```C
