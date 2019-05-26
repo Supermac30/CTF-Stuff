@@ -22,7 +22,7 @@ The private key can be found with **_de = 1 mod totient_** knowing that
 **_totient = (p-1)(q-1)_ where _pq = n_ and p,q are primes**
 
 ## Solution
-It is very important to note that **_de = 1 % totient_**.
+It is very important to note that **_de = 1 mod totient_**.
 
 We are given c, n, and e but not d. Upon first glance, other than the fact that factoring n is a possible solution, it should be obvious that e is absolutely massive, especially given the hint. 
 
