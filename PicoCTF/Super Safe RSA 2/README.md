@@ -21,9 +21,13 @@ The private key can be found with **_de = 1 % totient_** knowing that
 **_totient = (p-1)(q-1)_ where _pq = n_ and p,q are primes**
 
 ## Solution
-It is important to note that **_de = 1 % totient_**.
+It is very important to note that **_de = 1 % totient_**.
 
-We are given c, n, and e but not d. Upon first glance, other than the fact that factoring n is a possible solution, it should be obvious that e is absolutely massive, especially given the hint. Knowing that e and d are modular inverses it then implies that d must be tiny. This makes this RSA extremely vulnerable to a simple brute force. Running the Script above which tests every d value starting from 1 yields:
+We are given c, n, and e but not d. Upon first glance, other than the fact that factoring n is a possible solution, it should be obvious that e is absolutely massive, especially given the hint. 
+
+Knowing that e and d are modular inverses it then implies that d must be tiny. This makes this encryption extremely vulnerable to a simple brute force. 
+
+Running the Script above which tests every d value starting from 1 yields:
 ```
 d = 65537
 picoCTF{w@tch_y0ur_Xp0n3nt$_c@r3fu11y_8013575}
