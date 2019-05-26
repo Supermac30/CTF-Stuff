@@ -9,6 +9,6 @@ The script Autokey Decoder in this directory Automates this.
 ## Problem Statement
 https://www.mysterytwisterc3.org/images/challenges/mtc3-cli-02-autokey-en.pdf
 
-Essentially, the objective is to decode the ciphered text CLWYSXGHAXASPVVHRFQFFDRKMVKOVYY knowing that one of the words in the plaintext is hello.
+Essentially, the objective is to decode the ciphered text CLWYSXGHAXASPVVHRFQFFDRKMVKOVYY knowing that one of the words in the plaintext is world.
 
 ## Solving The Problem
