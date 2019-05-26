@@ -1,7 +1,7 @@
 # Autokey Ciphers
 The Autokey cipher is a polyalphabetic substitution cipher characterised by not having a repeated keyword.
 
-To encode the plaintext first concatinate the plaintext to the keyword to make the key, then for i 1...lengthOfPlaintext:
+To encode the plaintext first concatinate the plaintext to the keyword to make the key, then for i 0...lengthOfPlaintext:
 
   **_c[i] = K[i] + p[i] % 26_**
 
