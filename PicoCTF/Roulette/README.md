@@ -12,7 +12,7 @@ Line 166 decides the spin,
 printf("Spinning the Roulette for a chance to win $%lu!\n", 2*bet);
 long spin = (rand() % ROULETTE_SIZE)+1;
 ```
-Here rand() is used which according to http://www.cplusplus.com/reference/cstdlib/rand/ is
+Here rand() is used which according to http://www.cplusplus.com/reference/cstdlib/rand/
 > Returns a pseudo-random integral number in the range between 0 and RAND_MAX.
 > This algorithm uses a seed to generate the series, which should be initialized to some distinctive value using function srand.
 
