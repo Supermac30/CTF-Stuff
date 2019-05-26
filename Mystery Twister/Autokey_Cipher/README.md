@@ -3,7 +3,7 @@ The Autokey cipher is a polyalphabetic substitution cipher characterised by not 
 
 To encode the plaintext first concatinate the plaintext to the keyword to make the key, then for i 0...lengthOfPlaintext:
 
-  **_c[i] = K[i] + p[i] % 26_**
+  **_c[i] = (K[i] + p[i]) % 26_**
 
 I have written scripts above to help make this working with the Autokey cipher easier, Autokey Encoder does the process above automatically
 ## Problem Statement
@@ -14,7 +14,7 @@ Essentially, the objective is to decode the ciphered text CLWYSXGHAXASPVVHRFQFFD
 ## Solving The Problem
 Knowing that WORLD is part of the plaintext we can easily find part of the key using:
 
-**_c[i] - p[i] % 26 = K[i]_**
+**_(c[i] - p[i]) % 26 = K[i]_**
 
 By subtracting the plaintext at all positions we should be able to find part of the key.
 
