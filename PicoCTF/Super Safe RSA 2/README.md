@@ -18,11 +18,11 @@ and with private key d
 
 decode - **_m = c^d % n_**
 
-The private key can be found with **_de = 1 % totient_** knowing that
+The private key can be found with **_de % totient = 1_** knowing that
 **_totient = (p-1)(q-1)_ where _pq = n_ and p,q are primes**
 
 ## Solution
-It is very important to note that **_de = 1 % totient_**.
+It is very important to note that **_de % totient = 1_**.
 
 We are given c, n, and e but not d. Upon first glance, other than the fact that factoring n is a possible solution, it should be obvious that e is absolutely massive, especially given the hint. 
 
