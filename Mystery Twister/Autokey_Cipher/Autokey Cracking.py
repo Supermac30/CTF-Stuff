@@ -10,4 +10,4 @@ for i in range(len(ciphertext) - len(part)):
     word = ""
     for j in range(len(part)):
         word += chr((ord(ciphertext[i+j]) - ord(part[j]))%26 + ord("A"))
-    print("A possible plaintext {} is at position {}".format(word,i))
+    print("A possible part of the key {} is at position {}".format(word,i))
