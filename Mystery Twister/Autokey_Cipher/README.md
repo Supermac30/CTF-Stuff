@@ -28,30 +28,30 @@ A possible part of the key ZHQGC is at position 13
 Position 12 looks very promising, especially since it looks like the word WORLD is cut off.
 Rerunning the script with THEWORLD as part of the plaintext yields:
 ```
-A possible plaintext HQWWBEKE is at position 8
-A possible plaintext ETOTHEWO is at position 9
-A possible plaintext HLLZHQGC is at position 10
+A possible part of the key HQWWBEKE is at position 8
+A possible part of the key ETOTHEWO is at position 9
+A possible part of the key HLLZHQGC is at position 10
 ```
 
 ETOTHEWO doesn't make much sence, but it contains our plaintext so will try it anyway. Our objective here is to keep running the script until we find the plaintext that starts at position 0. So with ETOTHEWORLD as part of the plaintext,
 ```
-A possible plaintext TNTHQWWBEKE is at position 5
-A possible plaintext COMETOTHEWO is at position 6
-A possible plaintext DHJHLLZHQGC is at position 7
+A possible part of the key TNTHQWWBEKE is at position 5
+A possible part of the key COMETOTHEWO is at position 6
+A possible part of the key DHJHLLZHQGC is at position 7
 ```
 
 then COMETOTHEWORLD as part of the plaintext,
 ```
-A possible plaintext UKGTNTHQWWBEKE is at position 2
-A possible plaintext WELCOMETOTHEWO is at position 3
-A possible plaintext QJUDHJHLLZHQGC is at position 4
+A possible part of the key UKGTNTHQWWBEKE is at position 2
+A possible part of the key WELCOMETOTHEWO is at position 3
+A possible part of the key QJUDHJHLLZHQGC is at position 4
 ```
 
 add finally WELCOMETOTHEWORLD as part of the plaintext,
 ```
-A possible plaintext GHLWELCOMETOTHEWO is at position 0
-A possible plaintext PSNQJUDHJHLLZHQGC is at position 1
-A possible plaintext AUHVSVWEMZIRZTAUN is at position 2
+A possible part of the key GHLWELCOMETOTHEWO is at position 0
+A possible part of the key PSNQJUDHJHLLZHQGC is at position 1
+A possible part of the key AUHVSVWEMZIRZTAUN is at position 2
 ```
 
 Nice! It looks like our key is GHL. We can be sure of this with the "Autokey Key Finder.py" script using WELCOMETOTHEWORLD as our plaintext. Using CLWYSXGHAXASPVVHRFQFFDRKMVKOVYY as the cipher text and GHL as the key in the "Autokey decoder.py" script results in:
