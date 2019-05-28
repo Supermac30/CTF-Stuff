@@ -15,6 +15,5 @@ while True:
         print(plaintext)
         break
     except:
-        pass
-    d += 1
+        d += 1
 
