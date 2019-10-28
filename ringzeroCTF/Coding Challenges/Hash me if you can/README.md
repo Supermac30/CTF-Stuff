@@ -1,7 +1,7 @@
 # Hash me if you can
 
 To solve this problem I used selenium in a python REPL. First after opening up a selenium browser go to ringzero and sign in. Then compile this function and run it:
-```
+```python
 def solve():
 	import hashlib
 	HEADER = "----- BEGIN MESSAGE -----\n"

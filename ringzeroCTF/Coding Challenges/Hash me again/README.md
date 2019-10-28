@@ -1,7 +1,7 @@
 # Hash me again
 
 We can solve this the exact same way we solved Hash me if you can, but this time we have to remember to convert the message from binary to ascii. [This](https://stackoverflow.com/questions/7396849/convert-binary-to-ascii-and-vice-versa) was helpful. Remember to open import selenium and sign in first.
-```
+```python
 def solve():
 	import hashlib
 	HEADER = "----- BEGIN MESSAGE -----\n"

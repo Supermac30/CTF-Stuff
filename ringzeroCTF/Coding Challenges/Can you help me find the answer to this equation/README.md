@@ -1,7 +1,7 @@
 # Can you help me find the answer to this equation
 
 To solve this we have to split the input into parts, convert the numbers to base 10, then add and subtract them. Remember to import selenium, open a browser in the variable browser, then sign in before running solve.
-```
+```python
 def solve():
 	import hashlib
 	HEADER = "----- BEGIN MESSAGE -----\n"

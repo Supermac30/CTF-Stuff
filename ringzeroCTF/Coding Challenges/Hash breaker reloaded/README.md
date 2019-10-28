@@ -1,7 +1,7 @@
 # Hash breaker reloaded
 
 This time we are given a salted hash. We can solve this exactly the same way as before but this time taking into account the fact that there are multiple message divs and that we have to add the salt before hashing. Remember to set the variable browser as your driver and login before running solve.
-```
+```python
 def solve():
 	import hashlib
 	HEADER0 = "----- BEGIN HASH -----\n"

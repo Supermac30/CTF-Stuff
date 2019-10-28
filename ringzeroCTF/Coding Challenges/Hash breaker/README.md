@@ -1,7 +1,7 @@
 # Hash breaker
 
 Looking at the hashes in an online [hash cracker](https://crackstation.net/) we see that they are small numbers hashed with SHA1. This means to solve this challenge we only need to loop until we find a hash that matches the one on the website and print the answer. Remember to set the broser variable as the selenium browser, and to login before running solve.
-```
+```python
 def solve():
 	import hashlib
 	HEADER = "----- BEGIN MESSAGE -----\n"
