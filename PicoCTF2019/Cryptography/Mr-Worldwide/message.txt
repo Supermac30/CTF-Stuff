@@ -1,0 +1,15 @@
+picoCTF{
+2QH3+86 Kyoto, Japan
+FP9R+Q9 Odesa, Odessa Oblast, Ukraine
+QR55+H9 Dayton, Ohio, USA
+2X8H+3R Eminönü, Rüstem Paşa, Fatih/İstanbul, Turkey
+F988+MM Abu Dhabi - United Arab Emirates
+4MRV+87 Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia
+_
+2Q47+5C Addis Ababa, Ethiopia
+2Q6W+9H Loja, Ecuador
+9VHW+5R Amsterdam, Netherlands
+34PR+7J Sleepy Hollow, New York, USA
+QHRV+24 Kodiak, Alaska, USA
+6W4F+8R Alexandria, Egypt
+}
