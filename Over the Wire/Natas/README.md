@@ -92,6 +92,6 @@ echo $file;
 Password: jmLTY0qiPZBbaKc9341cqPQZBJv7MQbY
 
 ## Level 13
-This is the same problem as before except now we have to pass an extra if statement that checks if our file is an image. It checks this using the function exif_imagetype. A quick trip to the (documentation)[https://www.php.net/manual/en/function.exif-imagetype.php] tells us that this is done by checking the file signature. This means we can easily bypass the check by modifing the file signature in a hex editor. Changing the first four bytes to FF D8 FF DB, shifting our code four bytes, and changning the code above to read from the file natas14 results in the password. All we have to do after our modifications to the file is change the variable filename from a .jpg to a .php file and submit.
+This is the same problem as before except now we have to pass an extra if statement that checks if our file is an image. It checks this using the function exif_imagetype. A quick trip to the [documentation](https://www.php.net/manual/en/function.exif-imagetype.php) tells us that this is done by checking the file signature. This means we can easily bypass the check by modifing the file signature in a hex editor. Changing the first four bytes to FF D8 FF DB, shifting our code four bytes, and changning the code above to read from the file natas14 results in the password. All we have to do after our modifications to the file is change the variable filename from a .jpg to a .php file and submit.
 
 Password: Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1
